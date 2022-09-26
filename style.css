@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "fire";
+    src: url("Police/PlayWithFire.ttf");
+}
+
+@font-face {
+    font-family: "magic";
+    src: url("Police/MagicRetro.ttf");
+}
+
+#container {
+
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(103,0,255,1) 50%, rgba(0,0,0,1) 100%);
+
+}
+
+#container {
+
+    display: grid;
+
+
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "liens liens liens"
+    ". . ."
+    "b1 b1 b1"
+    ". . ."
+    "b2 b2 b2"
+    ". . .";
+}
+
+#pseudo {
+    
+    display: grid;
+    grid-area: b1;
+    text-shadow: indigo;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(103,0,255,1) 50%, rgba(61,0,0,1) 100%);
+    text-align: center;
+    font-family: "magic";
+    font-size: larger;
+
+}
+
+#spicy {
+
+    display: grid;
+    grid-area:b2;
+    text-align: center;
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(255,0,0,1) 50%, rgba(61,0,0,1) 100%);
+    font-family: "fire";
+    justify-content: center;
+}
+
+#image :hover {
+
+    transform: scaleX(160);
+    transform: scaleY(160);
+    transform: scale();
+    transform: scale(160,160);
+
+}
+
+#liens {
+
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    grid-area: liens;
+   
+
+}
+
+#lien1 {
+
+    text-align: center;
+    flex-basis:33%;
+
+
+}
+
+#lien2 {
+
+    text-align: center;
+    flex-basis: 33%;
+    
+}
+
+#lien3 {
+
+
+    text-align: center;
+    flex-basis: 33%;
+
+}
+
